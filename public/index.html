@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="SEL — mentora virtual para meninas e mulheres que estudam Python e Banco de Dados."
+    >
+
+    <title>SEL | Python e Banco de Dados</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="aplicacao">
+
+        <section class="painel-sel">
+
+            <aside class="painel-lateral">
+
+                <div class="perfil-sel">
+                    <div class="identidade-visual-sel">
+                        <div class="avatar-sel">
+                            <img
+                                src="./images/sel-avatar.jpg"
+                                alt="Rosto da assistente virtual SEL"
+                            >
+                        </div>
+
+                        <div class="assinatura-sel">
+                            <strong>SEL</strong>
+                            <span>TECNOLOGIA PARA ELAS</span>
+                        </div>
+                    </div>
+
+                    <h1>Vamos aprender juntas?</h1>
+
+                    <p>
+                        Sua companheira para estudar Python e Banco de Dados
+                        com acolhimento, exemplos simples e confiança.
+                    </p>
+                </div>
+
+                <div class="especialidades" aria-label="Especialidades da SEL">
+
+                    <div class="especialidade">
+                        <div class="icone-especialidade">Py</div>
+
+                        <div>
+                            <strong>Python</strong>
+                            <span>Lógica, código e interpretação de erros</span>
+                        </div>
+                    </div>
+
+                    <div class="especialidade">
+                        <div class="icone-especialidade">DB</div>
+
+                        <div>
+                            <strong>Banco de Dados</strong>
+                            <span>SQL, modelagem e conceitos fundamentais</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <blockquote class="lema-sel">
+                    Saber para começar.<br>
+                    Evoluir para conquistar.<br>
+                    Liderar para transformar.
+                </blockquote>
+
+            </aside>
+
+            <section class="area-principal">
+
+                <header class="cabecalho-pagina">
+
+                    <div>
+                        <h2>Sua mentora de estudos</h2>
+                        <p>Um espaço seguro para aprender no seu ritmo.</p>
+                    </div>
+
+                    <button
+                        type="button"
+                        id="novaConversa"
+                        class="botao-nova-conversa"
+                    >
+                        <span aria-hidden="true">↻</span>
+                        Nova conversa
+                    </button>
+
+                </header>
+
+                <section class="chat" aria-label="Conversa com a SEL">
+
+                    <header class="cabecalho-chat">
+
+                        <div class="status-sel">
+                            <span class="indicador-online" aria-hidden="true"></span>
+
+                            <div>
+                                <strong>SEL está disponível</strong>
+                                <span>Especialista em Python e Banco de Dados</span>
+                            </div>
+                        </div>
+
+                        <div class="simbolos-tecnologia" aria-hidden="true">
+                            <span>Py</span>
+                            <span>DB</span>
+                        </div>
+
+                    </header>
+
+                    <div
+                        id="areaMensagens"
+                        class="area-mensagens"
+                        aria-live="polite"
+                    >
+
+                        <article class="mensagem mensagem-sel">
+
+                            <div class="avatar-mensagem" aria-hidden="true">
+                                S
+                            </div>
+
+                            <div class="conteudo-mensagem">
+                                <strong>SEL</strong>
+
+                                <p>
+                                    Oi! Eu sou a SEL 💜 Uma mentora virtual criada
+                                    para apoiar meninas e mulheres que estão aprendendo
+                                    Python e Banco de Dados. Qual é a sua dúvida?
+                                </p>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <div
+                        id="statusCarregamento"
+                        class="status-carregamento"
+                        aria-live="polite"
+                        hidden
+                    >
+                        <span class="ponto-carregamento"></span>
+                        <span class="ponto-carregamento"></span>
+                        <span class="ponto-carregamento"></span>
+                        SEL está pensando...
+                    </div>
+
+                    <div class="sugestoes" aria-label="Sugestões de assuntos">
+                        <span>Variáveis em Python</span>
+                        <span>Consultas SQL</span>
+                        <span>Análise de erros</span>
+                    </div>
+
+                    <form id="formChat" class="formulario-chat">
+
+                        <label for="mensagem" class="texto-acessivel">
+                            Digite sua mensagem
+                        </label>
+
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="1"
+                            maxlength="2000"
+                            placeholder="Digite sua dúvida sobre Python ou Banco de Dados..."
+                            autocomplete="off"
+                            required
+                        ></textarea>
+
+                        <button
+                            type="submit"
+                            id="botaoEnviar"
+                            class="botao-enviar"
+                        >
+                            Enviar
+                            <span aria-hidden="true">➜</span>
+                        </button>
+
+                    </form>
+
+                    <footer class="rodape-chat">
+                        <p>A SEL ensina o raciocínio para você conquistar autonomia.</p>
+                    </footer>
+
+                </section>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
